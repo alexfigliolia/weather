@@ -8,7 +8,7 @@
         <title>Weather</title>
         <meta name="title" content="">
         <meta name="description" content="">
-        <link href='https://fonts.googleapis.com/css?family=Raleway:500,700|Roboto:100' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:500,700|Roboto:100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -43,39 +43,47 @@
                 </div>
                 <div class='hourly'>
                     <div>
-                        <h3>1pm</h3>
+                        <h3 class='hour-small' id='hourNow'>1pm</h3>
+                        <img src="icons/weather6.svg">
+                        <h3 id='smallTemp'>56&#176;</h3>
+                    </div>
+                    <div>
+                        <h3 class='hour-small'>4pm</h3>
                         <img src="icons/weather6.svg">
                         <h3>56&#176;</h3>
                     </div>
                     <div>
-                        <h3>4pm</h3>
+                        <h3 class='hour-small'>7pm</h3>
                         <img src="icons/weather6.svg">
                         <h3>56&#176;</h3>
                     </div>
                     <div>
-                        <h3>7pm</h3>
+                        <h3 class='hour-small'>10pm</h3>
                         <img src="icons/weather6.svg">
                         <h3>56&#176;</h3>
                     </div>
                     <div>
-                        <h3>10pm</h3>
+                        <h3 class='hour-small'>1am</h3>
                         <img src="icons/weather6.svg">
                         <h3>56&#176;</h3>
                     </div>
                     <div>
-                        <h3>1am</h3>
-                        <img src="icons/weather6.svg">
-                        <h3>56&#176;</h3>
-                    </div>
-                    <div>
-                        <h3>4am</h3>
+                        <h3 class='hour-small'>4am</h3>
                         <img src="icons/weather6.svg">
                         <h3>56&#176;</h3>
                     </div>
                 </div>
                 <div id='weekly'>
+                    <div class='day1'>
+                        <h3 class='day d1'>Monday</h3>
+                        <img src="icons/weather6.svg">
+                        <div class='todayTemps'>
+                            <h3 class='max-temp'>60&#176;</h3>
+                            <h3 class='min-temp'>50&#176;</h3>
+                        </div>
+                    </div>
                     <div>
-                        <h3>Monday</h3>
+                        <h3 class='day d2'>Tuesday</h3>
                         <img src="icons/weather6.svg">
                         <div>
                             <h3>60&#176;</h3>
@@ -83,7 +91,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3>Tuesday</h3>
+                        <h3 class='day d3'>Wednesday</h3>
                         <img src="icons/weather6.svg">
                         <div>
                             <h3>60&#176;</h3>
@@ -91,7 +99,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3>Wednesday</h3>
+                        <h3 class='day d4'>Thursday</h3>
                         <img src="icons/weather6.svg">
                         <div>
                             <h3>60&#176;</h3>
@@ -99,15 +107,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3>Thursday</h3>
-                        <img src="icons/weather6.svg">
-                        <div>
-                            <h3>60&#176;</h3>
-                            <h3>50&#176;</h3>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Friday</h3>
+                        <h3 class='day d5'>Friday</h3>
                         <img src="icons/weather6.svg">
                         <div>
                             <h3>60&#176;</h3>
@@ -135,7 +135,7 @@
 
 
 
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="js/app.js"></script>
         
     </body>
