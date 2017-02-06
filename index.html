@@ -17,6 +17,32 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        
+        <div class="wrap-preload circle-ball">
+          <div class="overlay"></div>
+          <div class="wrap-content">
+            <div class="wrap-circle-ball">
+              <div class="wrap-ball">
+                <div class="ball ball-top"></div>
+                <div class="ball ball-top"></div>
+              </div>
+              <div class="wrap-ball">
+                <div class="ball ball-bot"></div>
+                <div class="ball ball-bot"></div>
+              </div>
+              <div class="wrap-effect">
+                <div class="wrap-circle">
+                  <div class="circle-effect left"></div>
+                  <div class="circle-effect left"></div>
+                </div>
+                <div class="wrap-circle">
+                  <div class="circle-effect right"></div>
+                  <div class="circle-effect right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <header>
             <div>
                 <div id='search'><img src='icons/0135-search.svg'></div>
@@ -37,105 +63,80 @@
             <div class='banner banner-home'>
                 <section class="rain"></section>
                 <div class='location-temp'>
-                    <h1>West Palm Beach</h1>
+                    <h1>New York</h1>
                     <h3 id='smDes'>It's gone rain</h3>
                     <h2 id='bigTemp'>56&#176;</h2>
                 </div>
                 <div class='hourly'>
-                    <div>
-                        <h3 class='hour-small' id='hourNow'>1pm</h3>
-                        <img src="icons/weather6.svg">
-                        <h3 id='smallTemp'>56&#176;</h3>
+                    <div id='humidity'>
+                        <h3>Humidity: 30%</h3>
                     </div>
-                    <div>
-                        <h3 class='hour-small'>4pm</h3>
-                        <img src="icons/weather6.svg">
-                        <h3>56&#176;</h3>
+                    <div id='wind'>
+                        <h3>Wind Speed: 30mph</h3>
                     </div>
-                    <div>
-                        <h3 class='hour-small'>7pm</h3>
-                        <img src="icons/weather6.svg">
-                        <h3>56&#176;</h3>
-                    </div>
-                    <div>
-                        <h3 class='hour-small'>10pm</h3>
-                        <img src="icons/weather6.svg">
-                        <h3>56&#176;</h3>
-                    </div>
-                    <div>
-                        <h3 class='hour-small'>1am</h3>
-                        <img src="icons/weather6.svg">
-                        <h3>56&#176;</h3>
-                    </div>
-                    <div>
-                        <h3 class='hour-small'>4am</h3>
-                        <img src="icons/weather6.svg">
-                        <h3>56&#176;</h3>
+                    <div id='pressure'>
+                        <h3>Pressure: 30%</h3>
                     </div>
                 </div>
                 <div id='weekly'>
-                    <div class='day1'>
+                    <div class='day1 day-wrap'>
                         <h3 class='day d1'>Monday</h3>
-                        <img src="icons/weather6.svg">
+                        <img src="icons/rain.svg">
                         <div class='todayTemps'>
-                            <h3 class='max-temp'>60&#176;</h3>
-                            <h3 class='min-temp'>50&#176;</h3>
+                            <h3 class='f-temp ft1'>60&#176;</h3>
                         </div>
                     </div>
-                    <div>
+                    <div class='day-wrap'>
                         <h3 class='day d2'>Tuesday</h3>
-                        <img src="icons/weather6.svg">
+                        <img src="icons/rain.svg">
                         <div>
-                            <h3>60&#176;</h3>
-                            <h3>50&#176;</h3>
+                            <h3 class='f-temp'>60&#176;</h3>
                         </div>
                     </div>
-                    <div>
+                    <div class='day-wrap'>
                         <h3 class='day d3'>Wednesday</h3>
-                        <img src="icons/weather6.svg">
+                        <img src="icons/rain.svg">
                         <div>
-                            <h3>60&#176;</h3>
-                            <h3>50&#176;</h3>
+                            <h3 class='f-temp'>60&#176;</h3>
                         </div>
                     </div>
-                    <div>
+                    <div class='day-wrap'>
                         <h3 class='day d4'>Thursday</h3>
-                        <img src="icons/weather6.svg">
+                        <img src="icons/rain.svg">
                         <div>
-                            <h3>60&#176;</h3>
-                            <h3>50&#176;</h3>
+                            <h3 class='f-temp'>60&#176;</h3>
                         </div>
                     </div>
-                    <div>
+                    <div class='day-wrap'>
                         <h3 class='day d5'>Friday</h3>
-                        <img src="icons/weather6.svg">
+                        <img src="icons/rain.svg">
                         <div>
-                            <h3>60&#176;</h3>
-                            <h3>50&#176;</h3>
+                            <h3 class='f-temp'>60&#176;</h3>
                         </div>
                     </div>
                 </div>
-          <!--       <div class='fixed-bottom'></div>
-                <div class='fixed-bottom'></div> -->
             </div>
 
 
         </div>
         <div id='menu'>
             <div>
-                <h2>New York, NY</h2>
-                <h2>Boston, MA</h2>
-                <h2>Providence, RI</h2>
-                <h2>Chicago, IL</h2>
-                <h2>Miami, FL</h2>
-                <h2>West Palm Beach, FL</h2>
-                <h2>ADD A CITY +</h2>
+                <h2 id='addACity'>ADD A CITY +</h2>
             </div>
+        </div>
+        <div id='searching'>
+            <div>
+                <label for='searcher'>SEARCH</label>
+                <input id='searcher' type='text' placeholder="Enter a City">
+            </div>
+            <button id='clearSearch'>X</button>
+            <button id='goBack'>BACK</button>
         </div>
 
 
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhDSqoRM_s45I_sYtrZW4qA5MKUGYNxhw&libraries=places"></script>
         <script src="js/app.js"></script>
         
     </body>
